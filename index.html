@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="./assets/wind1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <div class="container-1">
+            <img src="./assets/wind1.png" class="m-icon1">
+            <h1 class="m-heading1">SkyCast</h1>
+        
+        </div> -->
+        <img class="weather-img">
+        <div class="container-2">
+            
+            <nav>
+                <img src="./assets/wind1.png" class="m-icon">
+                <h1 class="m-heading">SkyCast</h1>
+                <div class="search">
+                    <div class="search-box">
+                        <input type="text" id="locationInput" placeholder="Enter Location">
+                        <!-- <span class="L-icon"><i class="fa-solid fa-location-crosshairs"></i></span> -->
+                        <ul class="search-history">
+                            
+                        </ul>
+                    </div>
+                    <div class="S-icon"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+                <div class="settings"><i class="fa-solid fa-gear setting-icon"></i>
+                    <select class="select">
+                        <option >Celcius</option>
+                        <option>Fahrenheit</option>
+                    </select>
+                </div>
+            </nav>   
+
+
+            <div class="main-content">
+                <div class="content">
+                    
+                    
+                    <div class="weather-container woble">
+                        <img class="current-icon">
+                        <h3 class="weather-desc"></h3>
+                        <h1 class="weather"></h1>
+                        <h2 class="weather-place">Search Location to get Weather</h2>
+                        <h3 class="feels-like"></h3>
+                     </div>
+
+                </div>
+
+                <div class="Cards">
+                    <div class="temp">
+                        <div id="big" class="card mTemp woble">Max Temprature<img src="./Cards/thermometer.gif"></div>
+                        <div id="big" class="card mTemp  woble">Min Temprature<img src="./Cards/low-temperature.gif"> </div>
+                    </div>
+                    <div class="Sun">
+                        <div id="big" class=" card sunCard woble">Sunrise<img src="./Cards/sunrise.gif"></div>
+                        <div id="big" class=" card sunCard woble">Sunset<img src="./Cards/sunset.gif"></div>
+                    </div>
+
+                    <div class="third">
+                        <div class="card thirdCard woble">Visibility<img src="./Cards/vision.gif"></div>
+                        <div class="card thirdCard woble">Humidity<img src="./Cards/humidity.gif"></div>
+                        <div class="card thirdCard woble">Pressure<img src="./Cards/resilience.gif"></div>
+                    </div>
+
+                    <div class="third">
+                        <div class="card wind woble">Wind Speed<img src="./Cards/windmill.gif"></div>
+                        <div class="card wind woble">Gust<img src="./Cards/wind.gif"></div>
+                        <div class="card wind woble">Wind Direction<img src="./Cards/weathercock.gif"></div>
+                    </div>                    
+                </div>
+            </div>
+
+
+            <div class="main-content2">
+                <div class="content-2">
+                    <div class="hourly">
+                        <h1>Forecast Hourly</h1>
+                    </div>
+                    <div class="next">
+                        <div class="next-hour card woble"><span style="font-size: larger;">After 3 Hour</span><img class="next-hour-img"></div>
+                        <div class="next-hour card woble"><span style="font-size: larger;">After 6 Hour</span><img class="next-hour-img"></div>
+                        <div class="next-hour card woble"><span style="font-size: larger;">After 9 Hour</span><img class="next-hour-img"></div>
+                    </div>
+                </div>
+                
+                <div class="content-3">
+                    <div class="hourly">
+                        <h1>More Information</h1>
+                    </div>
+                    <div class="table-div">
+                        <div class="table"><span>Localtime</span></div><hr>
+                        <div class="table"><span>Cloud Cover</span></div><hr>
+                        <div class="table"><span>Ground Level</span></div><hr>
+                        <div class="table"><span>Sea Level</span></div><hr>
+                        <div class="table"><span>Population</span></div><hr>
+                        <div class="table"><span>Latitude</span></div><hr>
+                        <div class="table"><span>Longitude</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div>
+                    <a href="https://www.linkedin.com/in/gaurav-kumar-5813bb321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/GauravOP-03/Frontend-Project." target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/GauravOP_03?t=AEAE5cDyi2D59Sf4cZ9yAw&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                
+                </div>
+                <p>Made By Gaurav Kumar</p>
+            </footer>
+        </div>
+        
+        
+    </div>
+    <script>function click(){
+        let search = document.querySelector("#locatio-input");
+        search.style.borderColor = "none";
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
