@@ -1,4 +1,4 @@
-#Weather Application
+# Weather Application
 
 This application provides real-time weather updates and includes the following features:
 
