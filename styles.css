@@ -737,6 +737,10 @@ footer p{
 }
 
 @media (max-width: 450px){
+    .content{
+        height: 40vh;
+        min-height: 200px;
+    }
     footer div a{
         /* width: 50%; */
           
