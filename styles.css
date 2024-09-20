@@ -40,7 +40,7 @@ nav{
     border-radius: 50px;
     margin: 15px 10px;
     transition: transform 0.2s ease;
-    z-index: 10;
+    z-index: 90;
     &:hover{
         box-shadow: 5px 5px rgba(0, 0, 0, 0.052);
         backdrop-filter: blur(20px);
@@ -256,7 +256,7 @@ input[type="text"] {
 
 .Cards{
     height: 85vh;
-    min-height: 1000px;
+    min-height: 900px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -459,6 +459,7 @@ input[type="text"] {
 footer{
     width: 100vw;
     height: 13vh;
+    min-height: 90px;
     background-color:  rgba(255, 255, 255, 0.258);
     backdrop-filter: blur(10px);
     margin-top: 3rem;
