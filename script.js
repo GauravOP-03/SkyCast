@@ -61,6 +61,7 @@ async function weatherSearch(){
     // searchHistory.push(location);
     let arr = location.split(" ");
     let loc = "";
+    showSearchHistory(location);
     for (const e of arr) {
         loc += "+"+e;
     }
@@ -73,7 +74,7 @@ async function weatherSearch(){
     try{
         
         let weather1 = await fetchWeather1(location);
-        showSearchHistory(location);
+        
         console.log(weather1.data);
         lat = weather1.data.coord.lat
         lon = weather1.data.coord.lon
