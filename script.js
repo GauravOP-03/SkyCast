@@ -227,9 +227,14 @@ async function weatherChange(lat , lon){
 
 
         if(city != undefined){
-            sPlace.innerText = "Location: "+city+", "+state+", "+country;
+            if(state != undefined){
+                sPlace.innerText = "Location: "+city+", "+state+", "+country;
+            }else{
+                sPlace.innerText= "Location: "+ country;
+            }            
             
         }else{
+            
             if(state != undefined){
                  sPlace.innerText = "Location: "+state+", "+country;
             }else{
