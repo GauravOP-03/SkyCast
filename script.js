@@ -378,8 +378,8 @@ cards.forEach(card => {
         const mouseX = e.clientX - centerX;
         const mouseY = e.clientY - centerY;
         // console.log(centerX);
-        const rotateX = (mouseY / details.height)*15;
-        const rotateY = -(mouseX / details.width)*15;
+        const rotateX = (mouseY / details.height)*20;
+        const rotateY = -(mouseX / details.width)*20;
         // console.log(rotateX);
 
         card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
